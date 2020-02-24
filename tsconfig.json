@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": ["dom", "esnext"],
+    "jsx": "react",
+    "skipLibCheck": true,
+    "declaration": true,
+    "outDir": "dist/"
+  },
+  "include": [
+    "src/"
+  ]
+}
