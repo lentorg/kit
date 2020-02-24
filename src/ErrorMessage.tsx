@@ -9,7 +9,7 @@ type ErrorMessageProps = {
 const ErrorMessage: FC<ErrorMessageProps> = ({ error }) => (
   <Container>
     <Text>En feil oppsto</Text>
-    <Text>{error.message}</Text>
+    <Text>{error && error.message}</Text>
   </Container>
 );
 
