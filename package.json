@@ -5,6 +5,9 @@
     "build": "tsc",
     "semantic-release": "semantic-release"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "version": "0.0.0-development",
   "dependencies": {
     "@expo/vector-icons": "^10.0.6",
