@@ -4,7 +4,7 @@ import Container from './Container';
 
 const NotFound: FC = () => (
   <Container>
-    <Text>Fant ikke</Text>
+    <Text>Fant ikke ressursen</Text>
   </Container>
 );
 
