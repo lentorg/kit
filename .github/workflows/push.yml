@@ -1,0 +1,24 @@
+name: Release Package
+on:
+  push:
+    branches:
+      - master
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - run: npm install
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run build
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx semantic-release
+        env:
+          CI: true
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
