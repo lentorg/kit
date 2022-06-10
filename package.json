@@ -25,7 +25,7 @@
     "@types/styled-system": "^5.1.4",
     "expo-module-scripts": "^1.2.0",
     "prettier": "^1.19.1",
-    "semantic-release": "^17.0.4",
+    "semantic-release": "^19.0.3",
     "styled-components": "^5.0.1",
     "styled-system": "^5.1.5"
   },
